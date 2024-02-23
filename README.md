@@ -48,6 +48,9 @@ load text from multiple PDF files by [langchain.document_loaders](https://python
 
 * store the texts in a [Vector database (FAISS)](https://python.langchain.com/docs/modules/data_connection/vectorstores/)
 
-* the process of generating embeddings from text is a one-time operation; after which, the embeddings can be stored in a vector database. This stored database can then be efficiently used for similarity searches without the need to recreate embeddings again.
+* the process of generating embeddings from text is a one-time operation; after which, the embeddings can be stored in a vector database. This stored database can then be efficiently used for similarity searches without the need to recreate embeddings again (because Add id to each chunk)
+
+
+
 
 
