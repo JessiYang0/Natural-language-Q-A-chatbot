@@ -60,11 +60,25 @@ load text from multiple PDF files by [langchain.document_loaders](https://python
 Custom prompt with LangChain library (PromptTemplate).
 
 ### Retriever chain
-Get the [retriever](https://python.langchain.com/docs/modules/data_connection/retrievers/) from the previously created FAISS index (vector database) with langchain.chains library.
-Returns documents given an unstructured query.
-Vector stores can be used as the backbone of a retriever
+* Get the [retriever](https://python.langchain.com/docs/modules/data_connection/retrievers/) from the previously created FAISS index (vector database) with langchain.chains library.
+* Returns documents given an unstructured query 
+* Vector stores can be used as the backbone of a retriever
 
-### QAbot
-wrap retriver, Llm model, customed prompt to a function by RetrievalQA LangChain library.
+## QAbot
+wrap retriver, Llm model, customed prompt, return_source_documents(pdf) to a function by RetrievalQA LangChain library.
 
 ### Post-process outputs
+* Format llm response
+** use textwrap to reformat a long text into lines of a fixed width.
+ 
+* Cite sources (PDFs)
+
+## Ask questions
+Invoke QA Chain from retriever chain QAbot above.
+Talk to your data.
+
+## Gradio Chat UI
+* quickly build a UI web application for machine learning model by [gradio]([https://www.gradio.app/guides/quickstart](https://www.gradio.app/guides/creating-a-chatbot-fast)).
+
+* how to use [gradio](https://www.gradio.app/guides/creating-a-chatbot-fast). 
+
