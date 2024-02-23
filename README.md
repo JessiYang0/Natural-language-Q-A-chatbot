@@ -54,8 +54,17 @@ load text from multiple PDF files by [langchain.document_loaders](https://python
 
 <img src="pic/vector_index.png">
 
-* After saving the vector database, we just load it (vector database)
+* After saving the vector database, we just load it (vector database) (can search similar vector from vector database with user prompt).
 
 ### Prompt Template
 Custom prompt with LangChain library (PromptTemplate).
 
+### Retriever chain
+Get the [retriever](https://python.langchain.com/docs/modules/data_connection/retrievers/) from the previously created FAISS index (vector database) with langchain.chains library.
+Returns documents given an unstructured query.
+Vector stores can be used as the backbone of a retriever
+
+### QAbot
+wrap retriver, Llm model, customed prompt to a function by RetrievalQA LangChain library.
+
+### Post-process outputs
