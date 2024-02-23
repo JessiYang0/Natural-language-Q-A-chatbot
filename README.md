@@ -44,13 +44,15 @@ load text from multiple PDF files by [langchain.document_loaders](https://python
 * load and process text chunk by chunk, reducing demands on system resources
 
 ### Create Embeddings
-*Embedd by [sentence-transformers](https://arxiv.org/pdf/1908.10084.pdf) with LangChain library
+*Embedd by [sentence-transformers](https://arxiv.org/pdf/1908.10084.pdf) with LangChain library.
 
-* store the texts in a [Vector database (FAISS)](https://python.langchain.com/docs/modules/data_connection/vectorstores/)
+* store the texts in a [Vector database (FAISS)](https://python.langchain.com/docs/modules/data_connection/vectorstores/) with LangChain library.
+
+<img src="pic/vector_store.png">
 
 * the process of generating embeddings from text is a one-time operation; after which, the embeddings can be stored in a vector database. This stored database can then be efficiently used for similarity searches without the need to recreate embeddings again (because Add id to each chunk)
 
-
+<img src="pic/vector_index.png">
 
 
 
