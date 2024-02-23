@@ -30,7 +30,7 @@ Conduct experiments with various LLMs (Large Language Models)
 5. set model in evaluation mode when using PyTorch models.
 
 ## [Hugging Face pipeline](https://python.langchain.com/docs/integrations/llms/huggingface_pipelines)
-integrate or wrap around functionality(model, tokenizer, temperature, top_p, repetition_penalty,  pad_token_id) within the langchain library 
+integrate or wrap around functionality(model, tokenizer, temperature, top_p, repetition_penalty,  pad_token_id) within the langchain library.
 
 ## Langchain
 Multiple document retriever with LangChain
@@ -54,5 +54,8 @@ load text from multiple PDF files by [langchain.document_loaders](https://python
 
 <img src="pic/vector_index.png">
 
+* After saving the vector database, we just load it (vector database)
 
+### Prompt Template
+Custom prompt with LangChain library (PromptTemplate).
 
