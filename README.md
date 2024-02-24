@@ -69,12 +69,14 @@ wrap retriver, Llm model, customed prompt, return_source_documents(pdf) to a fun
 
 ### Post-process outputs
 * Format llm response
+
 ** use textwrap to reformat a long text into lines of a fixed width.
  
 * Cite sources (PDFs)
 
 ## Ask questions
 Invoke QA Chain from retriever chain QAbot above.
+
 Talk to your data.
 
 ## Gradio Chat UI
