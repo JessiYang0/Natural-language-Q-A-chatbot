@@ -44,7 +44,7 @@ load text from multiple PDF files by [langchain.document_loaders](https://python
 * load and process text chunk by chunk, reducing demands on system resources
 
 ### Create Embeddings
-*Embedd by [sentence-transformers](https://arxiv.org/pdf/1908.10084.pdf) with LangChain library.
+* Embedd by [sentence-transformers](https://arxiv.org/pdf/1908.10084.pdf) with LangChain library.
 
 * store the texts in a [Vector database (FAISS)](https://python.langchain.com/docs/modules/data_connection/vectorstores/) with LangChain library.
 
@@ -69,8 +69,7 @@ wrap retriver, Llm model, customed prompt, return_source_documents(pdf) to a fun
 
 ### Post-process outputs
 * Format llm response
-
-** use textwrap to reformat a long text into lines of a fixed width.
+  *use textwrap to reformat a long text into lines of a fixed width.
  
 * Cite sources (PDFs)
 
